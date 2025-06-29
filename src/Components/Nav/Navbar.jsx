@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Form, InputGroup } from 'react-bootstrap'
+import Container from '../UI/Container'
 import { Fragment } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react'
@@ -30,7 +30,12 @@ const Navbar = () => {
     useEffect(() => {
         statatusSet()
         window.addEventListener('scroll', stickNavabr);
+        
+        return () => {
+            window.removeEventListener('scroll', stickNavabr);
+        }
     }, [location])
+    
     return (
         <Fragment>
 
@@ -65,7 +70,7 @@ const Navbar = () => {
 
                     <NavLink to="/" className=''>
                         {
-                            <img src={navabarScroll && (ToogleMenuResponsive == false) ? "./../images/logo.svg" : "./../images/logo2.svg"} alt="" />
+                            <img src={navabarScroll && (ToogleMenuResponsive == false) ? "./images/logo.svg" : "./images/logo2.svg"} alt="" />
                         }
 
                     </NavLink>
