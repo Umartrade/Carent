@@ -8,6 +8,14 @@ export default defineConfig({
     open: true
   },
   build: {
-    outDir: 'build'
-  }
+    outDir: 'build',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  base: './',
+  publicDir: 'public'
 })

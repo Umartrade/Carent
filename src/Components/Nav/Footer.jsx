@@ -11,7 +11,7 @@ const Footer = () => {
                 <Container>
                     <Row className='mb-10 gap-y-8'>
                         <Col md={3}>
-                            <img src="./images/logo.svg" className='mb-2' alt="" />
+                            <img src="/images/logo.svg" className='mb-2' alt="" />
                             <p className='text__16 text-[#D4D4D4]'>With our car rental services, you can experience the ultimate convenience and freedom of exploring your destination at your own pace.</p>
                         </Col>
                         <Col className='col-6' md={2} offset={1}>
@@ -34,11 +34,11 @@ const Footer = () => {
                         <Col md={4}>
                             <h5 className='font-medium text-[#A3A3A3] text__16 mb-3'>Link</h5>
                             <div className="flex items-center gap-3">
-                                <a href="#!"><img src="./images/ss (1).svg" alt="" /></a>
-                                <a href="#!"><img src="./images/ss (2).svg" alt="" /></a>
-                                <a href="#!"><img src="./images/ss (3).svg" alt="" /></a>
-                                <a href="#!"><img src="./images/ss (4).svg" alt="" /></a>
-                                <a href="#!"><img src="./images/ss (5).svg" alt="" /></a>
+                                <a href="#!"><img src="/images/ss (1).svg" alt="" /></a>
+                                <a href="#!"><img src="/images/ss (2).svg" alt="" /></a>
+                                <a href="#!"><img src="/images/ss (3).svg" alt="" /></a>
+                                <a href="#!"><img src="/images/ss (4).svg" alt="" /></a>
+                                <a href="#!"><img src="/images/ss (5).svg" alt="" /></a>
                             </div>
                         </Col>
                     </Row>
