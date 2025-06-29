@@ -199,7 +199,7 @@ section {
 }
 
 .page-item.active .page-link {
-    @apply bg-Mblue text-white border-Mblue;
+    @apply bg-Mblue text-Mwhite border-Mblue;
 }
 
 .page-item.disabled .page-link {
